@@ -13,3 +13,4 @@ const Greet = (props:greet) => {
 }
 
 export default Greet
+
