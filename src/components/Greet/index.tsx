@@ -1,13 +1,17 @@
 import React from 'react'
 
-type greet = {
-    name:string
+interface greet {
+    name:string,
+    age:number,
+    isLoggedIn:boolean
 }
 
 const Greet = (props:greet) => {
   return (
     <div>
-          <h1>{props.name}</h1>
+      {
+        props.isLoggedIn ? <h1>I'm {props.name},my age is {props.age}</h1> : <h1>Hello Guest!</h1>
+      } 
     </div>
   )
 }
