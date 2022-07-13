@@ -1,6 +1,5 @@
 import React from "react";
 import { CustomButton } from "./components/Button/Button";
-import {Text} from "./components/Component";
 import './style/Button.css'
 
 
@@ -11,7 +10,6 @@ function App() {
       <CustomButton variant="danger" onClick={() => console.log('Clicked!')}>
         <div>Danger Button</div>
       </CustomButton>
-      <Text as='label' size = {'md'} color='secondary' htmlFor='someId'>hello! i am CustomComponent</Text>
 		</div>
 	)
 }
